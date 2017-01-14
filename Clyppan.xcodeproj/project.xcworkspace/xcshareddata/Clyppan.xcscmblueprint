@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "286D4B24849DD4C25D0649839686D294A02091DF",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "B63276FA10FDE1EF61585838DCEDC5165478B4B2" : 9223372036854775807,
+    "286D4B24849DD4C25D0649839686D294A02091DF" : 9223372036854775807
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "0F7DDAC1-4641-49FB-A85E-99BB262E2C91",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "B63276FA10FDE1EF61585838DCEDC5165478B4B2" : "collections\/",
+    "286D4B24849DD4C25D0649839686D294A02091DF" : "clyppan\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "Clyppan",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "Clyppan.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "github.com:nelsnelson\/clyppan.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "286D4B24849DD4C25D0649839686D294A02091DF"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "github.com:nelsnelson\/collections.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "B63276FA10FDE1EF61585838DCEDC5165478B4B2"
+    }
+  ]
+}

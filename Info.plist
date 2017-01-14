@@ -4,23 +4,23 @@
 <dict>
 	<key>CFBundleDevelopmentRegion</key>
 	<string>English</string>
-	<key>CFBundleName</key>
-	<string>${PRODUCT_NAME}</string>
 	<key>CFBundleExecutable</key>
 	<string>${EXECUTABLE_NAME}</string>
 	<key>CFBundleIconFile</key>
 	<string>Clyppan</string>
 	<key>CFBundleIdentifier</key>
-	<string>cc.omh.Clyppan</string>
+	<string>$(PRODUCT_BUNDLE_IDENTIFIER)</string>
 	<key>CFBundleInfoDictionaryVersion</key>
 	<string>6.0</string>
+	<key>CFBundleName</key>
+	<string>${PRODUCT_NAME}</string>
 	<key>CFBundlePackageType</key>
 	<string>APPL</string>
+	<key>CFBundleShortVersionString</key>
+	<string>1.0</string>
 	<key>CFBundleSignature</key>
 	<string>????</string>
 	<key>CFBundleVersion</key>
-	<string>1.0</string>
-	<key>CFBundleShortVersionString</key>
 	<string>1.0</string>
 	<key>NSMainNibFile</key>
 	<string>MainMenu</string>
@@ -28,11 +28,11 @@
 	<string>NSApplication</string>
 	<key>NSUIElement</key>
 	<string>1</string>
+	<key>SUEnableAutomaticChecks</key>
+	<string>1</string>
 	<key>SUFeedURL</key>
 	<string>http://www.omh.cc/feeds/appcast/clyppan/</string>
 	<key>SUPublicDSAKeyFile</key>
 	<string>dsa_pub.pem</string>
-	<key>SUEnableAutomaticChecks</key>
-	<string>1</string>
 </dict>
 </plist>

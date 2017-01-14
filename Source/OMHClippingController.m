@@ -30,6 +30,7 @@
  */
 
 
+#import "AppController.h"
 #import "OMHClippingController.h"
 #import "OMHClipboardController.h"
 #import "OMHClipping.h"
@@ -115,7 +116,7 @@
     // Make sure sorting is correct since we'll be removing items from the 
     // bottom and up making the sorting very critical.
     [self setSorting];  
-    int count = [[self content] count];
+    unsigned long count = [[self content] count];
     while ( count > limit )
     {
         [self removeObjectAtArrangedObjectIndex:count - 1];
@@ -176,7 +177,7 @@
 
 - (void) removeAllObjects;
 {
-    int count = [[self arrangedObjects] count];
+    unsigned long count = [[self arrangedObjects] count];
     
     // We make a range starting from 1 to not remove the first (current) item
     NSIndexSet *set = [NSIndexSet indexSetWithIndexesInRange:NSMakeRange(1, count - 1)];
@@ -196,10 +197,10 @@
     [alert addButtonWithTitle:@"Don't Remove"];
     [alert setMessageText:@"Are you sure you want to remove the selected clipping?"];
     [alert setInformativeText:@"This action cannot be undone."];
-    [alert setAlertStyle:NSCriticalAlertStyle];
+    [alert setAlertStyle:NSAlertStyleCritical];
     
     [alert beginSheetModalForWindow:[[NSApp delegate] mainWindow]
-                      modalDelegate:self 
+                  completionHandler:self
                      didEndSelector:@selector( alertRemoveObjectDidEnd:returnCode:contextInfo: ) 
                         contextInfo:nil];
 }
@@ -217,7 +218,7 @@
     [alert addButtonWithTitle:@"Don't Remove"];
     [alert setMessageText:@"Are you sure you want to remove all clippings?"];
     [alert setInformativeText:@"This action cannot be undone."];
-    [alert setAlertStyle:NSCriticalAlertStyle];
+    [alert setAlertStyle:NSAlertStyleCritical];
     
     [alert beginSheetModalForWindow:[[NSApp delegate] mainWindow]
                       modalDelegate:self 
